@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Heroes Store" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current" value="index"></put-attribute>
+	</definition>
+
+	<definition name="users" extends="common">
+		<put-attribute name="title" value="Users"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/users.jsp"></put-attribute>
+		<put-attribute name="current" value="users"></put-attribute>
+	</definition>
+
+	<definition name="user-detail" extends="common">
+		<put-attribute name="title" value="User detail"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp"></put-attribute>
+		<put-attribute name="current" value="user"></put-attribute>
+	</definition>
+
+	<definition name="user-register" extends="common">
+		<put-attribute name="title" value="Sign Up"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp"></put-attribute>
+		<put-attribute name="current" value="user-register"></put-attribute>
+	</definition>
+
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp"></put-attribute>
+		<put-attribute name="current" value="login"></put-attribute>
+	</definition>
+
+	<definition name="admincategories" extends="common">
+		<put-attribute name="title" value="All Categories"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admincategories.jsp"></put-attribute>
+		<put-attribute name="current" value="admincategories"></put-attribute>
+	</definition>
+
+	<definition name="adminitems" extends="common">
+		<put-attribute name="title" value="All Items"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/adminitems.jsp"></put-attribute>
+		<put-attribute name="current" value="adminitems"></put-attribute>
+	</definition>
+
+	<definition name="itemprofile" extends="common">
+		<put-attribute name="title" value="Item profile"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/itemprofile.jsp"></put-attribute>
+		<put-attribute name="current" value="itemprofile"></put-attribute>
+	</definition>
+
+	<definition name="cart" extends="common">
+		<put-attribute name="title" value="Cart"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/cart.jsp"></put-attribute>
+		<put-attribute name="current" value="cart"></put-attribute>
+	</definition>
+
+	<definition name="categoryprofile" extends="common">
+		<put-attribute name="title" value="Category"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/categoryprofile.jsp"></put-attribute>
+		<put-attribute name="current" value="categoryprofile"></put-attribute>
+	</definition>
+
+</tiles-definitions>
